@@ -1,0 +1,706 @@
+/* 
+Hangman the game
+Jakub Wielgus project
+css file
+*/
+/*
+Main dividers
+*/
+/* phone vertical */
+@media  screen and (max-width: 440px)
+{
+    .query
+    {
+        font-size:20px;
+    }
+    .hiddenbox_button
+    {
+        font-size:18px !important;
+    }
+    .scores
+    {
+        font-size:18px;
+    }
+
+    .info
+    {
+        font-weight: bold;
+        padding:5px;
+        font-size:15px;
+
+
+    }
+    .keyboard
+    {
+        display:none;
+    }
+    .ansver
+    {
+        display:none;
+    }
+    .small
+    {
+        height:auto !important;
+        width:170px;
+        position:fixed;
+        top:0px;
+        right:0px;
+        z-index:100;
+        overflow:auto;
+    }
+
+    .hiddenbox
+    {
+        width:100%;
+        top:50%;
+        min-height:300px;
+    }
+    #phone_ask
+    {
+        width:100px;
+    }
+    .phone_ansver
+    {
+        font-size:15px;
+    }
+    h1
+    {
+        font-size:20px !important;
+    }
+    .text
+    {
+        margin-top:0px;
+    }
+    .phone_line
+    {
+        height:33px;
+    }
+    .phone_letter
+    {
+        font-size:10px !important;
+    }
+    .small
+    {
+        display:none;
+        overflow:auto;
+    }
+    .big
+    {
+        width:100%;
+    }
+    .hangman
+    {
+        height:250px;
+    }
+    .show
+    {
+        right:170px;
+    }
+    .hiddenbox_label
+    {
+        font-size:28px;
+    }
+}
+/* phone horizontal */
+@media screen and (min-width: 441px) and (max-width: 640px)
+{
+    .query
+    {
+        font-size:20px;
+    }
+    .hiddenbox_button
+    {
+        font-size:18px !important;
+    }
+    .scores
+    {
+        font-size:18px;
+    }
+    .info
+    {
+        font-weight: bold;
+        padding:5px;
+        font-size:15px;
+
+
+    }
+    .keyboard
+    {
+        display:none;
+    }
+    .ansver
+    {
+        display:none;
+    }
+    .small
+    {
+        height:auto !important;
+        width:250px;
+        position:fixed;
+        top:0px;
+        right:0px;
+        font-size:15px !important;
+        z-index:100;
+        overflow:auto;
+    }
+    .hiddenbox
+    {
+        width:100%;
+        overflow:auto;
+        display:block;
+        top:90%;
+        max-height:200px !important;
+
+    }
+    h1
+    {
+        font-size:25px !important;
+    }
+    .text
+    {
+        margin-top:0px;
+    }
+    .phone_line
+    {
+        height:49px;
+    }
+    .phone_letter
+    {
+        font-size:26px !important;
+    }
+    .small
+    {
+        display:none;
+        overflow:auto;
+    }
+    .big
+    {
+        width:100%;
+    }
+    .hangman
+    {
+        height:200px;
+    }
+    .show
+    {
+        right:250px;
+    }
+    .hiddenbox_label
+    {
+        font-size:35px;
+    }
+}
+/* tablet vertical */
+@media screen and (min-width: 641px) and (max-width: 800px)
+{
+    .query
+    {
+        font-size:30px;
+    }
+    .hiddenbox_button
+    {
+        font-size:20px !important;
+    }
+    .scores
+    {
+        font-size:20px;
+    }
+    .info
+    {
+        font-weight: bold;
+        padding:5px;
+        font-size:20px;
+
+
+    }
+    .keyboard
+    {
+        display:none;
+    }
+    .ansver
+    {
+        display:none;
+    }
+    .small
+    {
+        height:auto !important;
+        width:300px;
+        position:fixed;
+        top:0px;
+        right:0px;
+        font-size:15px !important;
+        z-index:100;
+        overflow:auto;
+    }
+    .hiddenbox
+    {
+        width:100%;
+        top:50%;
+        min-height:300px;
+
+    }
+    .phone_ansver
+    {
+        font-size:24px !important;
+    }
+    h1
+    {
+        font-size:28px !important;
+    }
+    .text
+    {
+        margin-top:10px;
+    }
+    .phone_line
+    {
+        height:60px;
+    }
+    .phone_letter
+    {
+        font-size:35px !important;
+    }
+    .small
+    {
+        display:none;
+    }
+    .big
+    {
+        width:100%;
+    }
+    .hangman
+    {
+        height:400px;
+    }
+    .show
+    {
+        right:300px;
+    }
+    .hiddenbox_label
+    {
+        font-size:40px;
+    }
+}
+/* others */
+@media screen and (min-width: 801px)
+{
+    .query
+    {
+        font-size:40px;
+    }
+    .hiddenbox_button
+    {
+        font-size:25px !important;
+    }
+
+    .scores
+    {
+        font-size:25px;
+        line-height:28px;
+    }
+    .info
+    {
+        font-weight: bold;
+        padding:5px;
+
+
+    }
+
+    .small
+    {
+        float:right; 
+        width:400px;
+        position:relative;
+        overflow:auto;
+        min-height:900px;
+    }
+    .arrow_div
+    {
+        display:none;
+    }
+    .hiddenbox
+    {
+        width:600px;
+        margin-left:-450px !important;
+        left:50% ;
+        top:50%;
+        min-height:300px;
+
+    }
+    h1
+    {
+        font-size:30px !important;
+    }
+    .text
+    {
+        margin-top:50px;
+    }
+    .phone_keyboard
+    {
+        display:none;
+    }
+    .big
+    {
+        width:calc(100% - 400px);
+    }
+    .hangman
+    {
+        height:500px;
+    }
+    .show
+    {
+        right:400px;
+    }
+    .hiddenbox_label
+    {
+        font-size:50px;
+    }	
+
+}
+@font-face {
+    font-family: 'Bungee', cursive;
+}
+body
+{
+    letter-spacing:2px;
+    color:white !important;
+    background-color: black !important;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+
+}
+
+.container
+{
+    position:relative;
+
+
+}
+.column
+{
+    height:100%;
+}
+.big
+{
+    float:left;
+
+}
+.small
+{
+    border:white solid 5px;
+    background-color:black;
+    z-index:5;
+}
+
+
+
+h1
+{
+    font-size:30px;
+    color:white;
+    background-color: black !important;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+}
+.buttons
+{
+    margin-top:40px;
+    text-align:center;
+    width:100%;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+}
+.scores
+{
+    margin-top:40px;
+    color:white;
+    background-color: black !important;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+
+
+
+}
+.letter
+{
+    float:left;
+    cursor:pointer;
+    padding:12px !important;
+    margin:0px !important;
+    font-size:19px !important;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+    border-radius:0px !important;
+}
+.line
+{
+    height:42px;
+    display: inline-block;
+    margin:0 auto;
+}
+.keyboard
+{
+    position:absolute;
+    bottom:100px;
+    margin-top:200px;
+    width:400px;
+    text-align:center;
+}
+
+.hangman
+{
+
+    background-position:center;
+
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.text
+{
+    width:100%;
+    text-align:center;
+
+}
+.spaces
+{
+    min-width:500px;
+    width:80%;
+
+    padding-left:20px;
+    margin: 0 auto;
+}
+
+.query
+{
+    word-spacing:10px;
+    font-weight:bold;
+}
+.ansver
+{
+    position:absolute;
+    bottom:20px;
+}
+.hiddenbox
+{
+    position:fixed;
+    margin:auto;
+    margin-top:-250px;
+    border: 5px solid white;
+    background-color:black;
+    z-index:2;
+    text-align:center;
+}
+.hiddenbox_label
+{
+    width:100%;
+    margin-top:40px;
+    color:white;
+    background-color: black !important;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+
+}
+.hiddenbox_info
+{
+    padding:20px;
+    font-size:20px;
+}
+.hiddenbox_button
+{
+    padding:15px !important;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+}
+
+#win
+{
+    display:none;
+}
+#lose
+{
+    display:none;
+}
+#register
+{
+    display:none;
+}
+#login
+{
+    display:none;
+}
+#leaderboards
+{
+    display:none;
+}
+
+.phone_letter
+{
+    float:left;
+    cursor:pointer;
+    padding:12px !important;
+    margin:0px !important;
+    font-family: Bungee  !important;
+    src: url(Bungee.woff) !important;
+    border-radius:0px !important;
+}
+.phone_line
+{
+    display: inline-block;
+}
+.phone_keyboard
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    text-align:center;
+
+}
+.word
+{
+    display: inline-block;
+}
+.big_category
+{
+    width:100%;
+    padding-right:80px;
+    text-align:center;
+    margin-top:2px;
+}
+.phone_ansver
+{
+    margin:5px;
+}
+.new_game_button
+{
+    width:400px;
+    text-align:center;
+}
+.mains_button
+{
+    width:100%;
+}
+.arrow_div
+{
+    background-color:black;
+    font-size:50px;
+    position:fixed;
+    top:0px;
+    cursor:pointer;
+    padding-bottom:10px !important;
+    border:3px solid white;
+    padding-top:40px !important;
+    padding-right:5px !important;
+    padding-left:10px !important;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    padding-bottom:10px !important;
+    border:3px solid white;
+    padding-top:40px !important;
+    padding-right:5px !important;
+    padding-left:10px !important;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+
+}
+
+.hide
+{
+
+    right:0px;
+}
+.ikona
+{
+    margin:0px !important;
+    font-size:50px !important;
+}
+.under_title
+{
+    font-size:18px;
+    padding:10px;
+}
+.field
+{
+    width:300px;
+    margin:0 auto !important;
+    margin-bottom:10px !important;
+}
+.field >label
+{
+    color:white !important;
+    margin:0px !important;
+    text-align:left;
+    width:100%;
+}
+.message > p
+{
+    font-size:12px !important;
+}
+.close_img
+{
+    position:absolute;
+    top:0px;
+    right:0px;
+    cursor:pointer;
+}
+.login_line
+{
+    width:70%;
+    font-size:20px;
+    text-align:left;
+    float:left;
+}
+.scores_line
+{
+    width:30%;
+    font-size:20px;
+    text-align:left;
+    float:left;
+}
+.table
+{
+    width:100%;
+    border:1px solid white;
+    padding:20px;
+}
+
+#list
+{
+    display:block;
+    overflow:auto;
+    max-height:200px;
+    overflow:auto;
+}
+tr
+{
+    width:100%;
+}
+.login_td
+{
+    width:70%;
+    float:left;
+    text-align:left;
+}
+.score_td
+{
+    width:30%;
+    float:left;
+    text-align:left;
+}
+.line
+{
+    width:100%;
+    text-align:left;
+}
+.results
+{
+    display:block;
+    max-height:200px;
+    overflow:auto;
+}
+.button
+{
+    border-radius:0px !important;
+}
+#hiddenbox_error
+{
+    display:none;
+}
