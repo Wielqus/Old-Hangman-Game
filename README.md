@@ -1,4 +1,4 @@
-﻿# Old-Hangman-Game
+﻿# Hangman Game
  
 Simple hangman game created with jquery and php. Completed in 2017.
 
